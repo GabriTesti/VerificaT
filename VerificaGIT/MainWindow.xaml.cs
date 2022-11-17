@@ -23,6 +23,16 @@ namespace VerificaGIT
         public MainWindow()
         {
             InitializeComponent();
+            Biblioteca b = new Biblioteca();
+        }
+
+        private void btnLibro_Click(object sender, RoutedEventArgs e)
+        {
+            Libro l = new Libro("Gianni", "casa", 2012, "mondadori", 1000);
+            Libro l2 = new Libro("Leo", "grattacielo", 2013, "mondadori", 300);
+            lblLibro.Content=l;
+            lblLibro.Content = l2;
+
         }
     }
 }
