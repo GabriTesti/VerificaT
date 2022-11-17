@@ -20,11 +20,11 @@ namespace VerificaGIT
     /// </summary>
     public partial class MainWindow : Window
     {
-        Biblioteca b = new Biblioteca();
+        Biblioteca b = new Biblioteca("carlo","via rossi","9:45","18:00");
         Libro l = new Libro("Gianni", "casa", 2012, "mondadori", 1000);
         Libro l2 = new Libro("Leo", "grattacielo", 2013, "mondadori", 300);
-        b.AggiungiLibro(l);
-        b.AggiungiLibro(l2);
+        b.aggiungiLibro(l);
+        b.aggiungiLibro(l2);
         public MainWindow()
         {
             InitializeComponent();

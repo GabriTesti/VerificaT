@@ -9,6 +9,8 @@
     <Grid>
         <Button x:Name="btnLibro" Content="crea libro" HorizontalAlignment="Left" Margin="92,50,0,0" VerticalAlignment="Top" Height="62" Width="102" Click="btnLibro_Click"/>
         <Label Name="lblLibro" Content="Label" HorizontalAlignment="Left" Margin="353,50,0,0" VerticalAlignment="Top" Height="62" Width="356"/>
+        <ListBox x:Name="lstBiblioteca" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="237,176,39,41"/>
+        <Button x:Name="btnBiblioteca" Content="Button" HorizontalAlignment="Left" Margin="69,198,0,0" VerticalAlignment="Top" Height="70" Width="99" Click="btnBiblioteca_Click"/>
 
     </Grid>
 </Window>
