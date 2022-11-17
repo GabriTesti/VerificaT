@@ -22,5 +22,16 @@ namespace VerificaGIT
             OrarioChiusura = orarioChiusura;
             Libri = new List<Libro>();
         }
+        public override string ToString()
+        {
+            return Nome + " " + Indirizzo + " " + OrarioApertura + " " + OrarioChiusura;
+        }
+        public void ReadingTimelibri()
+        {
+            for(int i=0;i<Libri.Count;i++)
+            {
+                Libri[i].ReadingTime();
+            }
+        }
     }
 }
