@@ -33,5 +33,9 @@ namespace VerificaGIT
                 Libri[i].ReadingTime();
             }
         }
+        public void aggiungiLibro(Libro l)
+        {
+            Libri.Add(l);
+        }
     }
 }
