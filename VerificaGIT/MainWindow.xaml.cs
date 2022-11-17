@@ -20,19 +20,28 @@ namespace VerificaGIT
     /// </summary>
     public partial class MainWindow : Window
     {
+        Biblioteca b = new Biblioteca();
+        Libro l = new Libro("Gianni", "casa", 2012, "mondadori", 1000);
+        Libro l2 = new Libro("Leo", "grattacielo", 2013, "mondadori", 300);
+        b.AggiungiLibro(l);
+        b.AggiungiLibro(l2);
         public MainWindow()
         {
             InitializeComponent();
-            Biblioteca b = new Biblioteca();
+           
         }
 
         private void btnLibro_Click(object sender, RoutedEventArgs e)
         {
-            Libro l = new Libro("Gianni", "casa", 2012, "mondadori", 1000);
-            Libro l2 = new Libro("Leo", "grattacielo", 2013, "mondadori", 300);
+           
             lblLibro.Content=l;
             lblLibro.Content = l2;
 
+        }
+
+        private void btnBiblioteca_Click(object sender, RoutedEventArgs e)
+        {
+            lstBiblioteca.Items.Add(b);
         }
     }
 }
