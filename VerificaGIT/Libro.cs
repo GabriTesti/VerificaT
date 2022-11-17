@@ -26,5 +26,22 @@ namespace VerificaGIT
         {
             return Autore + " " + Titolo + " " + Anno + " " + Editore + " " + NumeroPagine;  
         }
+        public string ReadingTime()
+        {
+            string TempoDiLettura = "";
+            if(NumeroPagine<100)
+            {
+                TempoDiLettura = "1h";
+            }
+            if(NumeroPagine>100&&NumeroPagine<200)
+            {
+                TempoDiLettura = "2h";
+            }
+            if(NumeroPagine>200)
+            {
+                TempoDiLettura = "piu di 2 ore";
+            }
+            return "";
+        }
     }
 }
